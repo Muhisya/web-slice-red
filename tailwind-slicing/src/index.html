@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Slicing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-mainColor">
+  <header class="bg-mainColor sticky top-0 z-50 md:px-36">
+  <div class="container mx-auto flex justify-between items-center px-10 py-4 relative">
+    <!-- Logo / Brand -->
+    <h1 class="text-2xl font-bold text-white font-josefin uppercase">LOGO</h1>
+
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <nav id="menu" class="hidden md:flex bottom-[-190px] md:bottom-auto left-0 w-full md:w-auto bg-mainColor  md:bg-transparent absolute md:static p-6 py-6 md:p-0 shadow-md md:shadow-none">
+      <ul class="flex flex-col md:flex-row md:space-x-6 text-white font-medium">
+        <li><a href="#" class="block py-2 hover:border-b-[2px] border-white font-josefin">Home</a></li>
+        <li><a href="#" class="block py-2 hover:border-b-[2px] border-white font-josefin">About</a></li>
+        <li><a href="#" class="block py-2 hover:border-b-[2px] border-white font-josefin">Service</a></li>
+        <li><a href="#" class="block py-2 hover:border-b-[2px] border-white font-josefin">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <!-- HERO -->
+  <section id="hero" class="min-h-screen flex flex-col md:flex-row items-center justify-between px-11 md:px-36">
+    <div class="text-white flex flex-col mt-14 md:mt-0 justify-center items-start px-6 md:px-20 w-full md:w-1/2">
+      <h2 class="text-[40px] md:text-[60px] font-bold font-josefin leading-[50px] md:leading-[70px] mb-6">
+        There’s a better way to grow
+      </h2>
+      <p class="text-lg md:text-xl font-semibold font-josefin mb-10">
+        Are you having a hard time growing your online business? Our team can help.
+      </p>
+      <a href="#" class="bg-white text-mainColor px-10 py-4 font-semibold hover:bg-secondColor hover:text-white transition duration-300 font-josefin uppercase">
+        Get Started
+      </a>
+    </div>
+    <div class="hidden md:flex w-full md:w-1/2 justify-center mt-10 md:mt-0">
+      <img src="/stuffpng.png" alt="Hero Image" class="w-[350px] md:w-[500px]">
+    </div>  
+  </section>
+
+  <!-- FEATURED -->
+  <section id="body" class="my-16 px-11 md:px-36">
+    <h2 class="text-[20px] text-white font-bold mb-6 font-josefin uppercase">Featured On</h2>
+    <div class="bg-thirdColor w-full rounded-[7px] flex flex-wrap md:flex-nowrap justify-center items-center">
+      <h3 class="text-white font-bold text-[25px] uppercase font-josefin px-10 py-10">logo here</h3>
+      <h3 class="text-white font-bold text-[25px] uppercase font-josefin px-10 py-10">logo here</h3>
+      <h3 class="text-white font-bold text-[25px] uppercase font-josefin px-10 py-10">logo here</h3>
+      <h3 class="text-white font-bold text-[25px] uppercase font-josefin px-10 py-10">logo here</h3>
+    </div>
+  </section>
+
+  <!-- DISCOVER -->
+  <section id="discover" class="min-h-screen flex flex-col items-center justify-center my-16 px-11 md:px-36">
+    <div class="text-center text-white flex flex-col items-center">
+      <h2 class="text-[40px] md:text-[55px] md:w-[571px] font-bold font-josefin mb-6">Discover new business strategies</h2>
+      <p class="text-lg md:text-xl font-semibold font-josefin mb-10 max-w-[500px]">
+        Thousands of startups trust us with our effective and efficient business techniques.
+      </p>
+      <a href="#" class="bg-white text-mainColor px-10 py-4 font-semibold hover:bg-secondColor hover:text-white transition duration-300 font-josefin uppercase">About us</a>
+    </div>
+  </section>
+
+  <div id="extraColor" class="bg-secondColor py-6">
+    <!-- WORK -->
+<section id="work" class="min-h-screen flex flex-col md:flex-row items-center justify-between gap-12 my-16 px-11 md:px-36">
+  <div class="w-full md:w-1/2 flex justify-center">
+    <img src="/work-serious.png" alt="We take our work seriously" class="w-[350px] md:w-[500px]">
+  </div>
+  <div class="text-white flex flex-col justify-center items-center md:items-start w-full md:w-1/2 px-6 md:px-20 text-center md:text-left">
+    <h2 class="text-[34px] md:text-[55px] font-bold font-josefin mb-6">We take our work seriously</h2>
+    <p class="text-lg md:text-xl font-semibold font-josefin mb-10">
+      Wasting time is not in our vocabulary. You can expect to get effective results in no time.
+    </p>
+    <a href="#" class="bg-white text-mainColor px-10 py-4 font-semibold hover:bg-thirdColor hover:text-white transition duration-300 font-josefin uppercase">Contact Us</a>
+  </div>
+</section>
+
+<!-- BUSINESS -->
+<section id="business" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between gap-12 my-16 px-11 md:px-36">
+  <div class="text-white flex flex-col justify-center items-center md:items-start w-full md:w-1/2 px-6 md:px-20 text-center md:text-left">
+    <h2 class="text-[36px] md:text-[55px] font-bold font-josefin mb-6">Grow your business fast</h2>
+    <p class="text-lg md:text-xl font-semibold font-josefin mb-10">
+      We understand how hard it is to grow a business. That’s why we’re here to do it for you.
+    </p>
+    <a href="#" class="bg-white text-mainColor px-10 py-4 font-semibold hover:bg-thirdColor hover:text-white transition duration-300 font-josefin uppercase">Contact Us</a>
+  </div>
+  <div class="w-full md:w-1/2 flex justify-center">
+    <img src="/business-fast.png" alt="Business fast" class="w-[350px] md:w-[500px]">
+  </div>
+</section>
+  </div>
+
+
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="min-h-screen flex flex-col items-center justify-center py-16 px-11 md:px-36">
+    <div class="text-center text-white mb-12">
+      <h3 class="text-[20px] font-bold font-josefin uppercase">Testimonials</h3>
+      <h2 class="text-[35px] md:text-[50px] md:w-[500px] font-bold font-josefin mt-4">Read what others say about us</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10 mt-10">
+      <!-- Card 1 -->
+      <div class="bg-thirdColor text-white p-8 rounded-lg text-center">
+        <img src="/guy.png" class="w-[120px] h-[120px] mx-auto rounded-full -mt-16 mb-4">
+        <h2 class="font-bold text-[20px] uppercase">Ron Williams</h2>
+        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo lacus. Sed ac libero nibh. Etiam porttitor eros nec nunc aliquet, a sollicitudin ipsum hendrerit.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-thirdColor text-white p-8 rounded-lg text-center">
+        <img src="/gays.png" class="w-[120px] h-[120px] mx-auto rounded-full -mt-16 mb-4">
+        <h2 class="font-bold text-[20px] uppercase">Anna Phils</h2>
+        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo lacus. Sed ac libero nibh. Etiam porttitor eros nec nunc aliquet, a sollicitudin ipsum hendrerit.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-thirdColor text-white p-8 rounded-lg text-center">
+        <img src="/guys.png" class="w-[120px] h-[120px] mx-auto rounded-full -mt-16 mb-4">
+        <h2 class="font-bold text-[20px] uppercase">Mary Madison</h2>
+        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a leo lacus. Sed ac libero nibh. Etiam porttitor eros nec nunc aliquet, a sollicitudin ipsum hendrerit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEGINNING -->
+  <section id="beginning" class="min-h-screen flex flex-col items-center justify-center my-16 bg-secondColor px-11 md:px-36">
+    <div class="text-center text-white flex flex-col items-center">
+      <h3 class="text-[20px] font-bold font-josefin uppercase">The Beginning</h3>
+      <h2 class="text-[40px] md:text-[50px] font-bold font-josefin my-8 max-w-[600px]">Get ready as your journey to success starts here</h2>
+      <a href="#" class="bg-white text-mainColor px-10 py-4 font-semibold hover:bg-thirdColor hover:text-white transition duration-300 font-josefin uppercase">Get Started</a>
+    </div>
+  </section>
+
+  <!-- FOOTER CONTENT -->
+  <div class="py-16 grid md:grid-cols-4 gap-12 text-white px-11 md:px-36">
+    <div>
+      <h1 class="text-2xl font-bold font-josefin uppercase">LOGO</h1>
+    </div>
+    <div>
+      <h3 class="font-josefin text-xl mb-4">Navigation</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="block hover:border-b-[2px] border-white font-josefin">Home</a></li>
+        <li><a href="#" class="block hover:border-b-[2px] border-white font-josefin">About</a></li>
+        <li><a href="#" class="block hover:border-b-[2px] border-white font-josefin">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-josefin text-xl mb-4">Contact</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="block hover:border-b-[2px] border-white font-josefin">Facebook</a></li>
+        <li><a href="#" class="block hover:border-b-[2px] border-white font-josefin">Instagram</a></li>
+        <li><a href="#" class="block hover:border-b-[2px] border-white font-josefin">Linkedin</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-josefin text-xl mb-4">Newsletter</h3>
+      <div class="flex bg-thirdColor rounded-lg overflow-hidden">
+        <input type="email" placeholder="Enter your email" class="flex-1 bg-transparent px-3 py-2 text-white placeholder-white">
+        <button class="bg-white w-[60px] flex justify-center items-center hover:bg-fifthColor hover:text-white transition">
+          <svg class="w-5 h-5 text-red-900 hover:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+<footer id="copyright" class="bg-secondColor text-white flex justify-center items-center py-4 mt-16 w-full px-11 md:px-36">
+  <p>Copyright © 2023 Logo. All rights reserved.</p>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  const iconHamburger = document.getElementById('icon-hamburger');
+  const iconClose = document.getElementById('icon-close');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    iconHamburger.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });   
+</script>
+</body>
+</html> 
